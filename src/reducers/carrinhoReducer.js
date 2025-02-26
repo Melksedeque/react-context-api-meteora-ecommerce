@@ -19,7 +19,7 @@ export const carrinhoReducer = (state, action) => {
       }
 
     case REMOVE_PRODUTO:
-      const produtoId = action.payload.id;
+      const produtoId = action.payload;
       return state.filter((item) => item.id !== produtoId);
 
     case UPDATE_QUANTIDADE:
